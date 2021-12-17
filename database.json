@@ -1,0 +1,12 @@
+{
+    "defaultEnv": {"ENV": "NODE_ENV"},
+      "development": {
+        "driver": "pg",
+        "user": {"ENV": "PGUSER_PR"},
+        "password": {"ENV": "PGPASSWORD_PR"},
+        "host": {"ENV": "PGHOST_PR"},
+        "database": {"ENV": "PGDATABASE_PR"}
+      },
+       
+      "sql-file" : true
+    }
