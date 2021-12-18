@@ -45,16 +45,23 @@ const readManySubTopics = async (query) => {
     const { pageNumber } = query;
     const pageLimit = query.pageLimit || 50;
     const skip = pageNumber * pageLimit - pageLimit;
-    const sortFld = query.sortField ? query.sortField : 'entryDate';
+    const sortFld = query.sortField ? query.sortField : 'st.entryDate';
     const sortDirection = Number(query.sortOrder) === 1 ? 'desc' : 'asc';
 
-    let condition = combineParams(theFilter);
-    if (condition === '') condition = 'deleted_at is null';
+    let condition = combineParams(theFilter, 'st');
+    if (condition === '') condition = 'st.deleted_at is null';
 
     const dbQuery = {
-      text: ` SELECT _id, title, theory, imageUrl, entryDate AS "pulicationDate"
-              FROM sub_topics 
-                WHERE   ${condition} AND deleted_at is null
+      text: ` SELECT st._id, st.title, st.theory, st.imageUrl, 
+                 st.entryDate AS "pulicationDate",
+                 tp.name AS "topic",
+                 sb.name AS "subject"
+              FROM sub_topics st
+                INNER JOIN topics tp
+                 ON st.topicId = tp._id
+                INNER JOIN subjects sb
+                 ON tp.subjectId = sb._id
+                WHERE   ${condition} AND st.deleted_at is null
        ORDER BY ${sortFld} ${sortDirection}
        LIMIT ${pageLimit}  OFFSET ${skip}`,
     };
@@ -62,7 +69,7 @@ const readManySubTopics = async (query) => {
     const getData = await db.query(dbQuery);
 
     const dbQuery2 = {
-      text: `SELECT  _id, COUNT(*) FROM  sub_topics WHERE ${condition} GROUP BY _id`,
+      text: `SELECT  _id, COUNT(*) FROM  sub_topics st WHERE ${condition} GROUP BY _id`,
     };
     const count = await db.query(dbQuery2);
 
