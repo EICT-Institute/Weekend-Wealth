@@ -109,7 +109,7 @@ Defined **endpoints** request for this App
 // Request main.domain.com/topics/delete-one/1
  
 
-// Response Status Code: 201
+// Response Status Code: 200
  {
     "success": true,
  }
