@@ -105,9 +105,36 @@ Defined **endpoints** request for this App
 // Request main.domain.com/subjects/delete-one/1
  
 
-// Response Status Code: 201
+// Response Status Code: 200
  {
     "success": true,
  }
+
+```
+
+
+### Search Subject
+
+| Endpoint                | Method | Description             |
+| ----------------------- | ------ | ----------------------- |
+| /subjects/search | GET   | Search subject by name |
+
+```javascript
+
+// Request main.domain.com/subjects/search
+ 
+
+// Response Status Code: 200
+{
+    "success": true,
+    "data": [
+        {
+            "_id": 1,
+            "name": "Chemestry",
+            "details": "high level high level high level high level",
+            "entrydate": "2021-12-18T18:13:19.285Z"
+        }
+    ]
+}
 
 ```
