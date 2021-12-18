@@ -6,6 +6,8 @@
 
 ```bash
 NODE_ENV=<environment>
+PORT=<port number>
+JWT_SECRET=<your jwt secret>
 
 PGUSER_PR=<pg user>
 PGPASSWORD_PR=<db password>
