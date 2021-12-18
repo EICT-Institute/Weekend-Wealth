@@ -15,6 +15,8 @@ Weekend wealth is an App. that gives students the ability to acquire abundant kn
 
 ```bash
 NODE_ENV=<environment>
+PORT=<port number>
+JWT_SECRET=<your jwt secret>
 
 PGUSER_PR=<pg user>
 PGPASSWORD_PR=<db password>
