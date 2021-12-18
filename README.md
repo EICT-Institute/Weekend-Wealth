@@ -29,5 +29,7 @@ PGPORT_PR=<db-port>
 - Run `db-migrate up` to run database migrations.
 - Run `db-migrate reset` to reset the database.
  
+ Check folder named **Doc** fo documentatios.
+ 
  --- more update to come ---
  
