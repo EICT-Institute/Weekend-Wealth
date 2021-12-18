@@ -20,7 +20,7 @@ const dbPool = new Pool({
 dbPool.connect().then(
   (status) => {
     console.log(
-      `DB Connected, Host, conn: host: ${status.connectionParameters.host}, port: ${status.connectionParameters.port}`
+      `DB conneted, host: ${status.connectionParameters.host}, port: ${status.connectionParameters.port}`
     );
   },
   (e) => {
