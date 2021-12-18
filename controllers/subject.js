@@ -3,6 +3,7 @@ const {
   readManySubjects,
   updateOneSubject,
   deleteOneSubject,
+  searchSubjectByName,
 } = require('../services/subject');
 
 const success = true;
@@ -63,9 +64,25 @@ const deleteOne = (req, res, next) => {
     });
 };
 
+const searchByName = (req, res, next) => {
+  const { text } = req.body;
+
+  searchSubjectByName(text)
+    .then((data) => {
+      res.status(201).json({
+        success,
+        data,
+      });
+    })
+    .catch((error) => {
+      next(error);
+    });
+};
+
 module.exports = {
   addOne,
   getMany,
   updateOne,
   deleteOne,
+  searchByName,
 };
