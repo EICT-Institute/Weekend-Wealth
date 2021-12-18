@@ -1,3 +1,4 @@
+
 # hello-world
 Weekend wealth is an App. that gives students the ability to acquire abundant knowledge on conventional subjects offered in secondary schools as well as short videos on vocational skills. This is an initiative of community.andela.com/c/ag-25-team’s project.
 
@@ -5,4 +6,28 @@ Weekend wealth is an App. that gives students the ability to acquire abundant kn
 
 (b) Non-exposure of students to the timely vocational skills/trade subjects, has contributed to persistent unemployment among the students. Thus, online short video stimulations on vocational skills should be introduced to the students.   
 
+ 
+## Set-Up
 
+- Clone repo.
+- Create `.env` file into the root location of this app.
+- Populate the `.env` as follows.
+
+```bash
+NODE_ENV=<environment>
+
+PGUSER_PR=<pg user>
+PGPASSWORD_PR=<db password>
+PGHOST_PR=<db host>
+PGDATABASE_PR=<db-name>
+PGPORT_PR=<db-port>
+```
+
+## Operation
+
+- Run `npm install` to install all app dependencies.
+- Run `db-migrate up` to run database migrations.
+- Run `db-migrate reset` to reset the database.
+ 
+ --- more update to come ---
+ 
