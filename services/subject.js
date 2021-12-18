@@ -128,9 +128,26 @@ const deleteOneSubject = (_id) => {
   }
 };
 
+/**@@ - serach by name */
+const searchSubjectByName = async (string) => {
+  try {
+    const query = {
+      text: `SELECT _id, name, details, entryDate FROM subjects 
+      WHERE  
+          "name" like '%${string}%'
+       `,
+    };
+
+    const searchData = await db.query(query);
+    return searchData.rows;
+  } catch (error) {
+    throw error;
+  }
+};
 module.exports = {
   addOneSubject,
   readManySubjects,
   updateOneSubject,
   deleteOneSubject,
+  searchSubjectByName,
 };
