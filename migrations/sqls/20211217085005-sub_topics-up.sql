@@ -4,7 +4,7 @@ CREATE TABLE public.sub_topics
     title character varying(255) NOT NULL,
     topicId bigint NOT NULL,
     theory character varying(255) NOT NULL,
-    imageUr character varying(255) DEFAULT NULL,
+    imageUrl character varying(255) DEFAULT NULL,
     entryDate TIMESTAMPTZ DEFAULT NOW() ,
     updated_at TIMESTAMPTZ DEFAULT null,
     deleted_at TIMESTAMPTZ DEFAULT null,
