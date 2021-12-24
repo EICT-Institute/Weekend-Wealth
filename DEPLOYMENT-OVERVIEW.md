@@ -8,6 +8,9 @@
 
 Due to Lack of credit, i scripted my spin up approach on this Doc.
 
+## [Click here >>> Final Architectural Model](https://drive.google.com/file/d/1leyPNd6r1ginwrTXS5APpUrgJxYoVpg2/view?usp=sharing)
+
+
 
  | TECHNICAL REQUIREMENTS |
  | ----------------------- |
