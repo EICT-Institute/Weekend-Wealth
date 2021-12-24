@@ -17,7 +17,7 @@ Due to Lack of credit, i scripted my spin up approach on this Doc.
 
 1. CI/CD pipeline to allow deployment of containers in sclalable enviroment.
 2. Security and integrity of hosting enviroment.
-3. Service avilability and reablity
+3. Service avilability and reliability.
 
 
 # Approach
