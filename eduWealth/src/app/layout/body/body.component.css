@@ -1,0 +1,15 @@
+.body-main {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-side {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+}
+
+.right-side {
+  width: 60%;
+}
