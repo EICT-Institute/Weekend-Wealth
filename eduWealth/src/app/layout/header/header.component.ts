@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  navBar = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  navBarToggle(){
+    this.navBar = this.navBar ? false : true;
   }
 
 }

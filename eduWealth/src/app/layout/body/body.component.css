@@ -1,15 +1,135 @@
-.body-main {
+.cntainr {
+}
+
+.banner {
+  height: 60vh;
+  background-attachment: fixed;
+  background-image: url("school.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.md {
+  height: 180px;
+  width: 180px;
+  float: right;
+  margin-top: -70px;
+  margin-right: 10vw;
+  padding: 5px;
+  background-image: url("md.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #000;
+  border-radius: 15px;
+}
+
+.aboutUs {
+  padding: 25px;
+  display: flow-root;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 35px;
+  color: #121e2f;
+  text-align: center;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.text {
+  color: #666666;
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+}
+
+.facts {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #0d1128;
+  color: #fff;
+}
+
+.titleW {
+  font-weight: bold;
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.factFlex {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
 }
 
-.left-side {
-  width: 40%;
+.fact,
+.counter {
+  text-align: center;
+  margin: 5px;
+}
+
+.fact {
+  font-size: 18px;
+}
+
+.counter {
+  font-size: 65px;
+}
+
+.message {
+  display: grid;
+  grid-template-columns: 25% auto;
+  padding: 4vw;
+  grid-gap: 30px;
+}
+
+.borderImg {
+  border: 10px solid #0d1128;
+  transition: transform 0.5s;
+  min-width: 280px;
+  height: 350px;
+}
+
+.img {
+  background-image: url("http://www.dpsgomtinagar.com/images/principal_imgneww.jpg");
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.borderImg:hover {
+  transform: scale(1.02) rotate(-2deg);
+}
+
+.msg {
   display: flex;
-  align-items: center;
-  padding-left: 10%;
+  flex-direction: column;
+  padding: 15px;
 }
 
-.right-side {
-  width: 60%;
+.msgTitle {
+  font-size: 35px;
+  font-weight: 600;
+  color: #0d1128;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.msgTxt {
+  color: #000;
+  font-size: 18px;
+  font-style: italic;
 }

@@ -1,0 +1,49 @@
+.container1 {
+  background-attachment: fixed;
+  background-image: url("http://cmseducation.org/campuses/mahanagar/images/slider/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+}
+
+.cntainr {
+  padding: 2vw;
+}
+
+.title {
+  font-size: 40px;
+  margin-left: 6vw;
+  font-weight: bold;
+  color: #0d1128;
+}
+
+.img {
+  background-image: url("http://cmseducation.org/campuses/mahanagar/images/slider/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.borderImg {
+  height: 250px;
+  width: 250px;
+  margin: auto;
+  border: 10px solid #0d1128;
+  transition: transform 0.2s;
+}
+
+.borderImg:hover {
+  transform: scale(1.09) rotate(3deg);
+}
+
+.txt {
+  padding: 25px;
+  font-size: 16px;
+  color: #000;
+  margin: 15px;
+  font-style: italic;
+}
