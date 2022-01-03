@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-footer',
@@ -9,8 +9,8 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 })
 export class FooterComponent implements OnInit {
 
-  faCoffee = faCoffee;
   
+
   constructor() { }
 
   ngOnInit(): void {
