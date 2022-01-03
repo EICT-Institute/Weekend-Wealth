@@ -1,0 +1,27 @@
+<div *ngIf="!navBar" class="cntainr">
+	<div class="flex">
+		<div class="navItem" (click)="navBarToggle()">☰</div>
+		<div id="logo" [routerLink]="['/home']"></div>
+		<div class="navItem home" [routerLink]="['/home']">Home</div>
+		<div class="navItem home" [routerLink]="['about']">About Us</div>
+		<div class="navItem home" [routerLink]="['/home']">Services</div>
+		<div class="navItem home" [routerLink]="['/home']">Login</div>
+	</div>
+	<div class="add">
+	
+	</div>
+</div>
+<div class="hrb"></div>
+
+<div *ngIf="navBar" class="navBar">
+	<div class="section1">
+		<div class="navLinks">
+			<div class="links" (click)="navBarToggle()"><b>   ✗ close</b></div>
+			<div class="hr"></div>
+			<div class="links" (click)="navBarToggle()" [routerLink]="['home']">Home</div>
+			<div class="links" (click)="navBarToggle()" [routerLink]="['about']">About Us</div>
+			<div class="links" (click)="navBarToggle()">Contact Us</div>
+		</div>
+	</div>
+	<div class="section2" (click)="navBarToggle()"></div>
+</div>

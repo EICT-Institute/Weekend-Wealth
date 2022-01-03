@@ -1,0 +1,95 @@
+* {
+  font-family: "Segoe UI";
+}
+
+a {
+  text-decoration: none;
+}
+
+.cntainr {
+  background-color: #4086f8;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.hr {
+  width: 90%;
+  margin-left: 5%;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.section2 {
+  color: #aebdae;
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.social,
+.contact {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.contact {
+  padding-left: 12px;
+  padding-bottom: 7px;
+}
+
+.icon {
+  font-size: 16px;
+  padding-right: 9px;
+  color: #fff;
+  /*color: transparent;
+    stroke: Green;
+    stroke-width: 12px;*/
+}
+
+.iconText {
+  display: inline-block;
+  font-size: 16px;
+  color: #aebdae;
+  margin-left: 12px;
+  margin-bottom: 3px;
+}
+
+.iconText:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.social {
+  margin-left: 18px;
+}
+
+.socialIcon {
+  font-size: 30px;
+  color: #aebdae;
+  padding: 5px;
+}
+
+.socialIcon:hover {
+  color: #fff;
+}
