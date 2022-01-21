@@ -83,7 +83,7 @@ External IP | None
 
  iv) Create a custom image
 
-*Note:* Delete **main-vm** create above and keep its image alone.
+*Note:* Delete **main-vm** create above and keep its disk alone.
 
 | Endpoint                | Method |
 | ----------------------- | ------ |
@@ -92,11 +92,11 @@ External IP | None
 | Source disk |	**main-vm**
 
 
-v) Configure an instance template
+v) Configure an instance template (to be used for managed instance)
 
 | Endpoint                | Method |
 | ----------------------- | ------ |
-Name | instance-template-1
+Name | **instance-template-1**
 Series |	E2
 Machine type	| e2-small
 Custom Boot disk | **studyAppCustomImage**
@@ -109,7 +109,7 @@ vi) Create the managed instance
 Name	| **managed-instance-1**
 Location |	Multiple zones
 Region	| us-central1
-Instance template |	instance-template-1
+Instance template |	**instance-template-1**
 Minimum number of instances | 	1
 Maximum number of instances | 3
 HTTP load balancing utilization | 80
@@ -162,7 +162,8 @@ Database Version	| MySQL 5.*
 **create database** |
 **create user account** |
 
-    - Connect to database
+    - Connect to database from any ruuning instance
+    
 - psql -h CLOUD_SQL_PRIVATE_IP_ADDRESS -U USERNAME
 
  
